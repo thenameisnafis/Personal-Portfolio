@@ -126,42 +126,55 @@ section{
 
 
 
-.portfolio__content {
+.about-img-card {
+	position: relative;
+	width: 480px; /* Wider card */
+	border-radius: 30px;
+	overflow: hidden;
+	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  }
+  
+  .about-img {
+	width: 100%;
+	display: block;
+	border-radius: 30px;
+  }
+  
+  .about-img-overlay {
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+	right: 25px;
+	background: white;
+	color: #f97316; /* Orange */
+	padding: 16px 24px;
+	font-size: 1.05rem;
+	border-radius: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #f3f4f6;
-	padding: 1rem 1.5rem;
-	border-radius: 12px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-	margin-bottom: 1rem;
-	transition: transform 0.3s ease;
-  }
-  
-  .portfolio__content:hover {
-	transform: translateY(-5px);
-  }
-  
-  .portfolio__info {
-	flex: 1;
-  }
-  
-  .portfolio__name {
-	font-size: 1.2rem;
-	color: #111827;
-	margin: 0;
-  }
-  
-  .portfolio__link {
-	font-size: 1.5rem;
-	color: #2563eb;
-	transition: color 0.3s ease;
+	font-weight: 600;
 	text-decoration: none;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
   }
   
-  .portfolio__link:hover {
-	color: #1d4ed8;
+  .about-img-overlay i {
+	font-size: 1.4rem;
+	color: #f75023
   }
+  
+  .about-img-overlay:hover {
+	background: #fff0e6;
+  }
+  
+  /* Optional: zoom-in effect on hover */
+  .about-img-card:hover .about-img {
+	transform: scale(1.05);
+	transition: transform 0.4s ease;
+  }  
+  
+  
   
 
 
